@@ -28,7 +28,7 @@ spec:
         app: php-demo
     spec:
       imagePullSecrets:
-      - name: devops-docker-registry
+      - name: local-registry
       containers:
       - name: php-demo
         image: ${CICD_IMAGE}:${CICD_EXECUTION_SEQUENCE}
